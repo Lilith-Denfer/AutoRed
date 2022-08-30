@@ -42,3 +42,6 @@ After specifying the details of the comments in the `comments.json` file, includ
 $ python3 AutoRed.py 
 ...
 ```
+## Todo
+Current crosspost subreddit is fixed on FemCreators, I would like to make that configurable.
+Would like to make things more user-friendly and variable in general
