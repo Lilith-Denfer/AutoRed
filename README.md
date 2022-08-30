@@ -19,6 +19,7 @@ and\or a `PASSWORD` field, which bypasses the console asking for a password inpu
 
 ## IMPORTANT Tips
 With the reddit api, posting to your user page is formatted as a subreddit called: u_[yourusernamegoeshere]
+In the subreddits CSV file, I recommend adding your user page with the IsTest flag for help with getting configured.
 
 You can open and write .csv files using google sheets or excel.
 
