@@ -19,7 +19,6 @@ and\or a `PASSWORD` field, which bypasses the console asking for a password inpu
 
 ## IMPORTANT Tips
 With the reddit api, posting to your user page is formatted as a subreddit called: u_[yourusernamegoeshere]
-In the subreddits CSV file, I recommend adding your user page with the IsTest flag for help with getting configured.
 
 You can open and write .csv files using google sheets or excel.
 
@@ -42,6 +41,3 @@ After specifying the details of the comments in the `comments.json` file, includ
 $ python3 AutoRed.py 
 ...
 ```
-## Todo
-Current crosspost subreddit is fixed on FemCreators, I would like to make that configurable.
-Would like to make things more user-friendly and variable in general
