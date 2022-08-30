@@ -18,13 +18,13 @@ You may also include a `WAIT` time (time the console will take between posts and
 and\or a `PASSWORD` field, which bypasses the console asking for a password input each time the app is launched; Both of these are OPTIONAL.
 
 ## IMPORTANT Tips
-With the reddit api, posting to your user page is formatted as a subreddit called: u_username, `u_EtherealVoi`, in your case.
+With the reddit api, posting to your user page is formatted as a subreddit called: u_[yourusernamegoeshere]
 
 You can open and write .csv files using google sheets or excel.
 
 The `time.txt` file determines when you last posted, and will include a message if it hasn't been 24 hours since your last post to account for subreddits with 24 hour post limits.
 
-The comment formatted in the `comments.json` file includes two different promotions, if you not want anything added to your comment, just write them as empty strings, or `""`. If you don't want a general string, use `""` as well. Unfortunately the current version of the app doesn't include the option to turn off automatic commenting, because it was developed with me in mind, I may add it in a future version.
+The comment formatted in the `comments.json` file includes two different promotions, if you not want anything added to your comment, just write them as empty strings, or `""`. If you don't want a general string, use `""` as well. Unfortunately the current version of the app doesn't include the option to turn off automatic commenting, because it was developed with me in mind; I may add it in a future version. The general string is always included in the comment, and is sort of a general tagline. The 'sub promo' comment is meant for plugging a subreddit and the 'OF promo' is used for plugging an OnlyFans or Manyvids etc.
 
 Internal imgur links must be used, as reddit doesn't allow internal image hosting on NSFW subreddits. The mobile app has a bug that allows it, but if we're using the api we have to host elsewhere. Internal imgur links take the form of https://i.imgur.com/file.jpg, instead of the usual https://imgur.com/image, and directly point to an image rather than the website. Videos are also allowed in the checks using links to `redgifs.com`.
 
@@ -34,7 +34,7 @@ Internal imgur links must be used, as reddit doesn't allow internal image hostin
 After specifying the details of the comments in the `info.json` file, including the csv files `posts.csv` and `subreddits.csv`, and adding the files `time.txt` and `config.ini` to the same directory as AutoRed.py, run the following. Use the provided samples as templates. 
 
 ```console
-(You will need to navigate the console to the directory containing everything first, this is what my bash script does automatically on my copy of the app. On Mac this would look like `cd Users/eve/Documents/AutoRed`, where cd stands for current directory, and you would specify the path.)
+(You will need to navigate the console to the directory containing everything first, this is what my bash script does automatically on my copy of the app. On Mac this would look like `cd Users/your_user_path/Documents/AutoRed`, where cd stands for current directory, and you would specify the path.)
 
 $ python3 AutoRed.py 
 ...
@@ -149,18 +149,18 @@ Example of throwing exception due to bad link:
 •
 • Would you like to read from CSV? (Y/N) n
 •
-• Enter a Title: Hey EtherealVoi!
-• You entered: "Hey EtherealVoi!" Is this OK? (Y/N) y
+• Enter a Title: Test!
+• You entered: "Test!" Is this OK? (Y/N) y
 •
 • Is this post a test? (Y/N) y
 •
 • Does this post include 🍆? (Y/N) y
 •
-• Please paste link url here: https://imgur.com/ethereal      
-• You entered: "https://imgur.com/ethereal" Is this OK? (Y/N) y
+• Please paste link url here: https://imgur.com/null      
+• You entered: "https://imgur.com/null" Is this OK? (Y/N) y
 •
-• Title: Hey EtherealVoi!
-• Url: https://imgur.com/ethereal
+• Title: Test!
+• Url: https://imgur.com/null
 •
 • Does this look okay? (Y/N) y
 •
