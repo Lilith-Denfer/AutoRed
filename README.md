@@ -1,5 +1,6 @@
 # AutoRed
-An app crafted to help post your smut online, namely Reddit
+An app crafted to help Feminine Dick-Having creators post their smut online, namely Reddit
+(Will be working to make the app as general-use as possible in the future, it has just been easier to program a personal interface as a trans woman)
 
 ## Installation and Set-Up
 
@@ -29,6 +30,8 @@ The program will return a file called `log.txt`, which records the last terminal
 The comment formatted in the `comments.json` file includes two different promotions, if you not want anything added to your comment, just write them as empty strings, or `""`. If you don't want a general string, use `""` as well. Unfortunately the current version of the app doesn't include the option to turn off automatic commenting, because it was developed with me in mind; I may add it in a future version. The general string is always included in the comment, and is sort of a general tagline. The 'sub promo' comment is meant for plugging a subreddit and the 'OF promo' is used for plugging an OnlyFans or Manyvids etc.
 
 Internal imgur links must be used, as reddit doesn't allow internal image hosting on NSFW subreddits. The mobile app has a bug that allows it, but if we're using the api we have to host elsewhere. Internal imgur links take the form of https://i.imgur.com/file.jpg, instead of the usual https://imgur.com/image, and directly point to an image rather than the website. Videos are also allowed in the checks using links to `redgifs.com`.
+
+It should also be noted that all posts are automarked as NSFW, as has been most useful for my variety of content
 
 
 ## Usage
